@@ -1,0 +1,75 @@
+/* Hallmark · tokens · theme: custom · vibe: "bege acolhedor, rosa e sálvia, terracota calma"
+ * paper: oklch(96% 0.014 70) · accent: oklch(50% 0.11 40)
+ * display: Fraunces · body: Geist · axes: light / roman-serif / chromatic-terracotta
+ */
+:root {
+  /* Paper & surfaces — beige, tinted toward the warm anchor */
+  --color-paper:    oklch(96% 0.014 70);
+  --color-paper-2:  oklch(93% 0.020 70);
+  --color-blush:    oklch(92% 0.030 20);   /* rosa pastel — section surface */
+  --color-sage:     oklch(92% 0.028 145);  /* verde pastel — section surface */
+  --color-sage-ink: oklch(58% 0.045 145);  /* botanical line drawing */
+  --color-blush-ink:oklch(72% 0.060 20);
+
+  /* Ink */
+  --color-ink:      oklch(27% 0.025 40);
+  --color-ink-2:    oklch(38% 0.022 40);
+  --color-muted:    oklch(47% 0.020 45);
+  --color-rule:     oklch(84% 0.020 60);
+  --color-rule-2:   oklch(89% 0.018 65);
+
+  /* Accent — terracotta, used for CTA + focus + links only */
+  --color-accent:     oklch(50% 0.110 40);
+  --color-accent-dk:  oklch(44% 0.105 40);
+  --color-accent-ink: oklch(97% 0.010 70);
+  --color-focus:      oklch(52% 0.160 40);
+  --color-error:      oklch(48% 0.150 28);
+  --color-tbc:        oklch(90% 0.050 85);  /* "a confirmar" highlight */
+
+  /* Type */
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-body:    "Geist", ui-sans-serif, system-ui, sans-serif;
+
+  --text-xs:   0.8125rem;
+  --text-sm:   0.9375rem;
+  --text-base: 1.0625rem;
+  --text-md:   1.3125rem;
+  --text-lg:   1.625rem;
+  --text-xl:   2.125rem;
+  --text-display-s: clamp(2.125rem, 3vw + 1.25rem, 3.5rem);
+  --text-display:   clamp(2.5rem, 4.2vw + 1.1rem, 4.75rem);
+
+  /* Space — 4pt scale */
+  --space-2xs: 0.25rem;
+  --space-xs:  0.5rem;
+  --space-sm:  0.75rem;
+  --space-md:  1rem;
+  --space-lg:  1.5rem;
+  --space-xl:  2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+  --page-gutter: clamp(1rem, 4vw, 3.5rem);
+  --measure: 62ch;
+  --max-w: 72rem;
+
+  /* Shape */
+  --radius-sm: 6px;
+  --radius-md: 14px;
+  --radius-pill: 999px;
+  --radius-arch: 999px 999px var(--radius-md) var(--radius-md);
+  --rule-hair: 1px solid var(--color-rule);
+
+  /* Motion */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:     cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-short: 160ms;
+  --dur-med:   320ms;
+  --dur-long:  700ms;
+
+  /* Layers */
+  --z-nav: 30;
+  --z-float: 40;
+  --z-sheet: 50;
+}
